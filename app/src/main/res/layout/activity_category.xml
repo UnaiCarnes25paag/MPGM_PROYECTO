@@ -1,0 +1,123 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:background="@drawable/bg_main_gradient"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="24dp">
+
+    <TextView
+        android:id="@+id/textViewTitle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="#FFFFFF"
+        android:textSize="32sp"
+        android:textStyle="bold"
+        android:gravity="center"
+        android:layout_marginBottom="20dp"
+        android:text="Sartu dirua" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <RadioGroup
+            android:id="@+id/categoryGroup"
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <RadioButton
+                android:id="@+id/btnFood"
+                android:text="🍕 Janaria"
+                android:tag="Janaria"
+                android:textColor="#FFFFFF"
+                android:textSize="20sp"
+                android:paddingVertical="12dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+            <RadioButton
+                android:id="@+id/btnLeisure"
+                android:text="🎮 Aisia"
+                android:tag="Aisia"
+                android:textColor="#FFFFFF"
+                android:textSize="20sp"
+                android:paddingVertical="12dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+            <RadioButton
+                android:id="@+id/btnShopping"
+                android:text="🛒 Erosketak"
+                android:tag="Erosketak"
+                android:textColor="#FFFFFF"
+                android:textSize="20sp"
+                android:paddingVertical="12dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+            <RadioButton
+                android:id="@+id/btnHome"
+                android:text="🏠 Etxea"
+                android:tag="Etxea"
+                android:textColor="#FFFFFF"
+                android:textSize="20sp"
+                android:paddingVertical="12dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+            <RadioButton
+                android:id="@+id/btnTransport"
+                android:text="🚗 Garraioa"
+                android:tag="Garraioa"
+                android:textColor="#FFFFFF"
+                android:textSize="20sp"
+                android:paddingVertical="12dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+            <RadioButton
+                android:id="@+id/btnNeeds"
+                android:text="💡 Beharrak"
+                android:tag="Beharrak"
+                android:textColor="#FFFFFF"
+                android:textSize="20sp"
+                android:paddingVertical="12dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+            <RadioButton
+                android:id="@+id/btnOther"
+                android:text="🏦 Beste"
+                android:tag="Beste"
+                android:textColor="#FFFFFF"
+                android:textSize="20sp"
+                android:paddingVertical="12dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+        </RadioGroup>
+
+        <EditText
+            android:id="@+id/editAmount"
+            android:hint="Zenbatekoa (€)"
+            android:inputType="numberDecimal"
+            android:layout_marginTop="20dp"
+            android:textColor="#FFFFFF"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+
+    <!-- Botones abajo -->
+    <Button
+        android:id="@+id/btnSave"
+        android:text="Gorde mugimendua"
+        android:backgroundTint="#8E2DE2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="12dp"/>
+
+    <Button
+        android:id="@+id/btnBack"
+        android:text="⬅ Itzuli"
+        android:backgroundTint="#8E2DE2"
+        android:textColor="@android:color/white"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+</LinearLayout>
