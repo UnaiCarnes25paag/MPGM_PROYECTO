@@ -25,6 +25,12 @@ class MainActivity : AppCompatActivity() {
         binding.btnGoSummary.setOnClickListener {
             startActivity(Intent(this, SummaryActivity::class.java))
         }
+
+        binding.btnPagoAutomatico.setOnClickListener {
+            val intent = Intent(this, PagoAutomaticoActivity::class.java)
+            startActivity(intent)
+        }
+
     }
 
     private fun goToCategory(type: String) {

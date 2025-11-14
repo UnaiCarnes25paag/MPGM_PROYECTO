@@ -69,8 +69,8 @@ class SummaryActivity : AppCompatActivity() {
         val totalNeto = totalIngresos - totalGastos
         tvTotalNeto.text = String.format("Totala: %+.2f €", totalNeto)
         tvTotalNeto.setTextColor(
-            if (totalNeto >= 0) android.graphics.Color.parseColor("#1B5E20")
-            else android.graphics.Color.parseColor("#B71C1C")
+            if (totalNeto >= 0) android.graphics.Color.parseColor("#43A047")
+            else android.graphics.Color.parseColor("#E53935")
         )
 
         layoutCategorias.removeAllViews()
@@ -95,14 +95,14 @@ class SummaryActivity : AppCompatActivity() {
 
             val tvIngreso = TextView(this).apply {
                 text = String.format("+%.2f €", ingresosPorCategoria[categoria])
-                setTextColor(android.graphics.Color.parseColor("#1B5E20"))
+                setTextColor(android.graphics.Color.parseColor("#66BB6A"))
                 gravity = android.view.Gravity.CENTER
                 layoutParams = LinearLayout.LayoutParams(0, LinearLayout.LayoutParams.WRAP_CONTENT, 1f)
             }
 
             val tvGasto = TextView(this).apply {
                 text = String.format("-%.2f €", gastosPorCategoria[categoria])
-                setTextColor(android.graphics.Color.parseColor("#B71C1C"))
+                setTextColor(android.graphics.Color.parseColor("#EF5350"))
                 gravity = android.view.Gravity.CENTER
                 layoutParams = LinearLayout.LayoutParams(0, LinearLayout.LayoutParams.WRAP_CONTENT, 1f)
             }

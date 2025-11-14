@@ -2,7 +2,7 @@
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:orientation="vertical"
     android:padding="16dp"
-    android:background="@drawable/bg_main_gradient"
+    android:background="@drawable/bg_app_gradient"
     android:gravity="center"
     android:layout_width="match_parent"
     android:layout_height="match_parent">
@@ -72,7 +72,7 @@
             <TextView
                 android:text="Diru-sarrerak guztira"
                 android:textStyle="bold"
-                android:textColor="#1B5E20"
+                android:textColor="#66BB6A"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content" />
 
@@ -80,7 +80,7 @@
                 android:id="@+id/tvTotalIngresos"
                 android:text="0 €"
                 android:textSize="18sp"
-                android:textColor="#1B5E20"
+                android:textColor="#66BB6A"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content" />
         </LinearLayout>
@@ -95,7 +95,7 @@
             <TextView
                 android:text="Gastuak guztira"
                 android:textStyle="bold"
-                android:textColor="#B71C1C"
+                android:textColor="#EF5350"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content" />
 
@@ -103,7 +103,7 @@
                 android:id="@+id/tvTotalGastos"
                 android:text="0 €"
                 android:textSize="18sp"
-                android:textColor="#B71C1C"
+                android:textColor="#EF5350"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content" />
         </LinearLayout>
@@ -113,7 +113,7 @@
         android:id="@+id/btnVolver"
         android:text="⬅ Itzuli"
         android:layout_marginTop="16dp"
-        android:backgroundTint="#8E2DE2"
+        android:background="@drawable/bg_main_gradient"
         android:layout_width="match_parent"
         android:layout_height="wrap_content" />
 </LinearLayout>
